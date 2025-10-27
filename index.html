@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KRISHNA Portfolio ⚡</title>
+  <link rel="stylesheet" href="lightning.css" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      background-color: black;
+    }
+
+    /* Canvas for lightning background */
+    #lightningCanvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+
+    .content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding-top: 20vh;
+    }
+
+    h1 {
+      font-size: 10vw;
+      letter-spacing: 5px;
+      margin: 0;
+      font-weight: 900;
+      color: #ffffff;
+      text-shadow: 0 0 20px rgba(0, 170, 255, 0.9);
+    }
+
+    p {
+      font-size: 1.5rem;
+      color: #bbb;
+      margin-top: 15px;
+    }
+
+    .section {
+      position: relative;
+      z-index: 2;
+      padding: 80px 20px;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.7);
+      margin-top: 40px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+
+    iframe {
+      border-radius: 12px;
+      margin-top: 20px;
+    }
+
+    img {
+      width: 60%;
+      max-width: 500px;
+      border-radius: 12px;
+      box-shadow: 0 0 30px rgba(0, 170, 255, 0.5);
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="lightningCanvas"></canvas>
+
+  <div class="content">
+    <h1>KRISHNA</h1>
+    <p>I'm coding just for fun right now.</p>
+  </div>
+
+  <div class="section">
+    <h2>🎧 My Favourite Song</h2>
+    <iframe style="border-radius:12px" 
+      src="https://open.spotify.com/embed/track/4rlx1DGszzyKdwm5Kps9Ot?utm_source=generator" 
+      width="80%" height="152" frameBorder="0" 
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+    </iframe>
+  </div>
+
+  <div class="section">
+    <h2>🎬 Favourite Movie Panel: Bhavesh Joshi</h2>
+    <img src="Bhavesh Joshi.jpg" alt="Bhavesh Joshi Movie Poster" />
+  </div>
+
+  <script src="lightning.js"></script>
+</body>
+</html>
